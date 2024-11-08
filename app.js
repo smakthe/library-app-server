@@ -13,8 +13,7 @@ config()
 const app = express()
 
 // Middleware
-app.use(json())
-app.use(cors())
+app.use(json(), cors())
 
 // Connect to MongoDB
 mongoConnect()
